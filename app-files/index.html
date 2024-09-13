@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>MysticRiver</title>
+<meta charset="utf-8">
+<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui" />
+<style> @-ms-viewport { width: device-width; } </style>
+<link rel="stylesheet" href="vendor/reset.min.css">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+</head>
+<body class="multiple-scenes view-control-buttons">
+
+<div id="pano"></div>
+
+<div id="sceneList">
+  <ul class="scenes">
+    
+      <a href="javascript:void(0)" class="scene" data-id="0-frames_0001">
+        <li class="text">frames_0001</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="1-frames_0002">
+        <li class="text">frames_0002</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="2-frames_0003">
+        <li class="text">frames_0003</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="3-frames_0004">
+        <li class="text">frames_0004</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="4-frames_0005">
+        <li class="text">frames_0005</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="5-frames_0006">
+        <li class="text">frames_0006</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="6-frames_0007">
+        <li class="text">frames_0007</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="7-frames_0008">
+        <li class="text">frames_0008</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="8-frames_0009">
+        <li class="text">frames_0009</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="9-frames_0010">
+        <li class="text">frames_0010</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="10-frames_0011">
+        <li class="text">frames_0011</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="11-frames_0012">
+        <li class="text">frames_0012</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="12-frames_0013">
+        <li class="text">frames_0013</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="13-frames_0014">
+        <li class="text">frames_0014</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="14-frames_0015">
+        <li class="text">frames_0015</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="15-frames_0016">
+        <li class="text">frames_0016</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="16-frames_0017">
+        <li class="text">frames_0017</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="17-frames_0018">
+        <li class="text">frames_0018</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="18-frames_0019">
+        <li class="text">frames_0019</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="19-frames_0020">
+        <li class="text">frames_0020</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="20-frames_0021">
+        <li class="text">frames_0021</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="21-frames_0022">
+        <li class="text">frames_0022</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="22-frames_0023">
+        <li class="text">frames_0023</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="23-frames_0024">
+        <li class="text">frames_0024</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="24-frames_0025">
+        <li class="text">frames_0025</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="25-frames_0026">
+        <li class="text">frames_0026</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="26-frames_0027">
+        <li class="text">frames_0027</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="27-frames_0028">
+        <li class="text">frames_0028</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="28-frames_0029">
+        <li class="text">frames_0029</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="29-frames_0030">
+        <li class="text">frames_0030</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="30-frames_0031">
+        <li class="text">frames_0031</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="31-frames_0032">
+        <li class="text">frames_0032</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="32-frames_0033">
+        <li class="text">frames_0033</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="33-frames_0034">
+        <li class="text">frames_0034</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="34-frames_0035">
+        <li class="text">frames_0035</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="35-frames_0036">
+        <li class="text">frames_0036</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="36-frames_0037">
+        <li class="text">frames_0037</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="37-frames_0038">
+        <li class="text">frames_0038</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="38-frames_0039">
+        <li class="text">frames_0039</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="39-frames_0040">
+        <li class="text">frames_0040</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="40-frames_0041">
+        <li class="text">frames_0041</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="41-frames_0042">
+        <li class="text">frames_0042</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="42-frames_0043">
+        <li class="text">frames_0043</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="43-frames_0044">
+        <li class="text">frames_0044</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="44-frames_0045">
+        <li class="text">frames_0045</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="45-frames_0046">
+        <li class="text">frames_0046</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="46-frames_0047">
+        <li class="text">frames_0047</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="47-frames_0048">
+        <li class="text">frames_0048</li>
+      </a>
+    
+  </ul>
+</div>
+
+<div id="titleBar">
+  <h1 class="sceneName"></h1>
+</div>
+
+<a href="javascript:void(0)" id="autorotateToggle">
+  <img class="icon off" src="img/play.png">
+  <img class="icon on" src="img/pause.png">
+</a>
+
+<a href="javascript:void(0)" id="fullscreenToggle">
+  <img class="icon off" src="img/fullscreen.png">
+  <img class="icon on" src="img/windowed.png">
+</a>
+
+<a href="javascript:void(0)" id="sceneListToggle">
+  <img class="icon off" src="img/expand.png">
+  <img class="icon on" src="img/collapse.png">
+</a>
+
+<a href="javascript:void(0)" id="viewUp" class="viewControlButton viewControlButton-1">
+  <img class="icon" src="img/up.png">
+</a>
+<a href="javascript:void(0)" id="viewDown" class="viewControlButton viewControlButton-2">
+  <img class="icon" src="img/down.png">
+</a>
+<a href="javascript:void(0)" id="viewLeft" class="viewControlButton viewControlButton-3">
+  <img class="icon" src="img/left.png">
+</a>
+<a href="javascript:void(0)" id="viewRight" class="viewControlButton viewControlButton-4">
+  <img class="icon" src="img/right.png">
+</a>
+<a href="javascript:void(0)" id="viewIn" class="viewControlButton viewControlButton-5">
+  <img class="icon" src="img/plus.png">
+</a>
+<a href="javascript:void(0)" id="viewOut" class="viewControlButton viewControlButton-6">
+  <img class="icon" src="img/minus.png">
+</a>
+
+<script src="vendor/screenfull.min.js" ></script>
+<script src="vendor/bowser.min.js" ></script>
+<script src="vendor/marzipano.js" ></script>
+
+<script src="data.js"></script>
+<script src="index.js"></script>
+
+<!-- Position the map below the Marzipano control buttons -->
+<div id="map" style="width: 400px; height: 300px; position: absolute; top: 60px; right: 10px; z-index: 1000;"></div>
+<script>
+// Initialize the Leaflet map
+var map = L.map('map').setView([42.4189, -71.1422], 13); // Default location and zoom
+
+// Add OpenStreetMap tiles
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; OpenStreetMap contributors'
+}).addTo(map);
+
+// List of GPS coordinates for each scene (example with 4 scenes, add more as needed)
+var markers = [
+    { lat: 42.4189, lon: -71.1422, title: 'Frame 1', sceneId: '0-frames_0001' },
+    { lat: 42.4209, lon: -71.1450, title: 'Frame 2', sceneId: '1-frames_0002' },
+    { lat: 42.4223, lon: -71.1480, title: 'Frame 3', sceneId: '2-frames_0003' },
+    { lat: 42.4245, lon: -71.1500, title: 'Frame 4', sceneId: '3-frames_0004' },
+	   { lat: 42.4265, lon: -71.1520, title: 'Frame 5', sceneId: '4-frames_0005' },
+    { lat: 42.4285, lon: -71.1540, title: 'Frame 6', sceneId: '5-frames_0006' },
+    { lat: 42.4300, lon: -71.1560, title: 'Frame 7', sceneId: '6-frames_0007' },
+    { lat: 42.4320, lon: -71.1580, title: 'Frame 8', sceneId: '7-frames_0008' },
+    { lat: 42.4340, lon: -71.1600, title: 'Frame 9', sceneId: '8-frames_0009' },
+    { lat: 42.4360, lon: -71.1620, title: 'Frame 10', sceneId: '9-frames_0010' },
+	 { lat: 42.4380, lon: -71.1640, title: 'Frame 11', sceneId: '10-frames_0011' },
+    { lat: 42.4400, lon: -71.1660, title: 'Frame 12', sceneId: '11-frames_0012' },
+    { lat: 42.4420, lon: -71.1680, title: 'Frame 13', sceneId: '12-frames_0013' },
+    { lat: 42.4440, lon: -71.1700, title: 'Frame 14', sceneId: '13-frames_0014' },
+    { lat: 42.4460, lon: -71.1720, title: 'Frame 15', sceneId: '14-frames_0015' },
+    { lat: 42.4480, lon: -71.1740, title: 'Frame 16', sceneId: '15-frames_0016' },
+    { lat: 42.4500, lon: -71.1760, title: 'Frame 17', sceneId: '16-frames_0017' },
+    { lat: 42.4520, lon: -71.1780, title: 'Frame 18', sceneId: '17-frames_0018' },
+    { lat: 42.4540, lon: -71.1800, title: 'Frame 19', sceneId: '18-frames_0019' },
+    { lat: 42.4560, lon: -71.1820, title: 'Frame 20', sceneId: '19-frames_0020' },
+    { lat: 42.4580, lon: -71.1840, title: 'Frame 21', sceneId: '20-frames_0021' },
+    { lat: 42.4600, lon: -71.1860, title: 'Frame 22', sceneId: '21-frames_0022' },
+    { lat: 42.4620, lon: -71.1880, title: 'Frame 23', sceneId: '22-frames_0023' },
+    { lat: 42.4640, lon: -71.1900, title: 'Frame 24', sceneId: '23-frames_0024' },
+    { lat: 42.4660, lon: -71.1920, title: 'Frame 25', sceneId: '24-frames_0025' },
+    { lat: 42.4680, lon: -71.1940, title: 'Frame 26', sceneId: '25-frames_0026' },
+    { lat: 42.4700, lon: -71.1960, title: 'Frame 27', sceneId: '26-frames_0027' },
+    { lat: 42.4720, lon: -71.1980, title: 'Frame 28', sceneId: '27-frames_0028' },
+    { lat: 42.4740, lon: -71.2000, title: 'Frame 29', sceneId: '28-frames_0029' },
+    { lat: 42.4760, lon: -71.2020, title: 'Frame 30', sceneId: '29-frames_0030' },
+    { lat: 42.4780, lon: -71.2040, title: 'Frame 31', sceneId: '30-frames_0031' },
+    { lat: 42.4800, lon: -71.2060, title: 'Frame 32', sceneId: '31-frames_0032' },
+    { lat: 42.4820, lon: -71.2080, title: 'Frame 33', sceneId: '32-frames_0033' },
+    { lat: 42.4840, lon: -71.2100, title: 'Frame 34', sceneId: '33-frames_0034' },
+    { lat: 42.4860, lon: -71.2120, title: 'Frame 35', sceneId: '34-frames_0035' },
+    { lat: 42.4880, lon: -71.2140, title: 'Frame 36', sceneId: '35-frames_0036' },
+    { lat: 42.4900, lon: -71.2160, title: 'Frame 37', sceneId: '36-frames_0037' },
+    { lat: 42.4920, lon: -71.2180, title: 'Frame 38', sceneId: '37-frames_0038' },
+    { lat: 42.4940, lon: -71.2200, title: 'Frame 39', sceneId: '38-frames_0039' },
+    { lat: 42.4960, lon: -71.2220, title: 'Frame 40', sceneId: '39-frames_0040' },
+    { lat: 42.4980, lon: -71.2240, title: 'Frame 41', sceneId: '40-frames_0041' },
+    { lat: 42.5000, lon: -71.2260, title: 'Frame 42', sceneId: '41-frames_0042' },
+    { lat: 42.5020, lon: -71.2280, title: 'Frame 43', sceneId: '42-frames_0043' },
+    { lat: 42.5040, lon: -71.2300, title: 'Frame 44', sceneId: '43-frames_0044' },
+    { lat: 42.5060, lon: -71.2320, title: 'Frame 45', sceneId: '44-frames_0045' },
+    { lat: 42.5080, lon: -71.2340, title: 'Frame 46', sceneId: '45-frames_0046' },
+    { lat: 42.5100, lon: -71.2360, title: 'Frame 47', sceneId: '46-frames_0047' },
+    { lat: 42.5120, lon: -71.2380, title: 'Frame 48', sceneId: '47-frames_0048' }
+	
+];
+
+// Add markers for each scene
+// Add draggable markers for each scene
+markers.forEach(function(marker) {
+    var popupContent = "<b>" + marker.title + "</b><br><a href='#' onclick=\"switchScene('" + marker.sceneId + "')\">View Panorama</a>";
+    
+    // Create a draggable marker
+    var mapMarker = L.marker([marker.lat, marker.lon], {draggable: true}).addTo(map).bindPopup(popupContent);
+    
+    // Event listener to capture the new position after dragging
+    mapMarker.on('dragend', function(e) {
+        var newLatLng = e.target.getLatLng();
+        console.log("Updated coordinates for " + marker.title + ": ", newLatLng.lat, newLatLng.lng);
+        // Here you can update your marker's coordinates or log them as needed
+    });
+});
+
+
+// Function to switch scenes (assuming a function like this already exists)
+function switchScene(sceneId) {
+    var sceneElement = document.querySelector(`[data-id='${sceneId}']`);
+    if (sceneElement) {
+        sceneElement.click();  // Simulate click to switch scene
+    } else {
+        console.error('Scene not found: ' + sceneId);
+    }
+}
+</script>
+
+
+</body>
+</html>
